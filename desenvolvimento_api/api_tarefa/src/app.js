@@ -188,7 +188,7 @@ app.delete("/tarefas/:id", async (request, response) => {
 });
 
 //listar todas as tarefas pendentes/ concluidas
-app.get("/tarefas/:situacao", async (request, response) => {
+app.get("/tarefas/situacao/:situacao", async (request, response) => {
   const { situacao } = request.params
 
    if (situacao !== "pendente" && situacao !== "concluida") {
